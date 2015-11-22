@@ -81,8 +81,8 @@ The tidydata.txt has 11880 observations and 4 variables. It stores the average o
 Total 6 files has been merged:
 * Three files in test directory: X_test.txt, y_test.txt, subject_test.txt. y_test.txt  and subject_test.txt contains subject id.
 * Three files in train directory: X_train.txt, y_train.txt, subject_train.txt.
-y_test.txt and y_train.txt contains activity id, subject_test.txt and subject_train.txt contains subject id.
-Each row of the data contains activity id, subject id and all the experiment data.
+* y_test.txt and y_train.txt contains activity id, subject_test.txt and subject_train.txt contains subject id.
+* Each row of the data contains activity id, subject id and all the experiment data.
 
 ## Data extraction
 The data set does not have feature names, so features.txt is merged to the data set. And data is filtered by "std()" and "mean()".
