@@ -69,20 +69,20 @@ tBodyGyroJerkMean
 
 The tidydata.txt has 11880 observations and 4 variables. It stores the average of each variable for each activity and each subject.
 
-* activityid Activity id, there are 6 activities as follows: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING
+* activityid -- Activity id, there are 6 activities as follows: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING.
 
-* subjectid The subject of the experiment, each subject has done several tests.
+* subjectid -- The subject of the experiment, each subject has done several tests.
 
-* measure The mean and standard deviation of each factor
+* measure -- The mean and standard deviation of each factor.
 
-* meanvalue The mean value of the measure
+* meanvalue -- The mean value of the measure.
 
 ## Data merge
 Total 6 files has been merged:
 * Three files in test directory: X_test.txt, y_test.txt, subject_test.txt. y_test.txt  and subject_test.txt contains subject id.
 * Three files in train directory: X_train.txt, y_train.txt, subject_train.txt.
-* y_test.txt and y_train.txt contains activity id, subject_test.txt and subject_train.txt contains subject id.
-* Each row of the data contains activity id, subject id and all the experiment data.
+y_test.txt and y_train.txt contains activity id, subject_test.txt and subject_train.txt contains subject id.
+Each row of the data contains activity id, subject id and all the experiment data.
 
 ## Data extraction
 The data set does not have feature names, so features.txt is merged to the data set. And data is filtered by "std()" and "mean()".
@@ -96,4 +96,4 @@ Also the feature name is very long, so instead of keeping all of them in lower c
 The dash is replaced with underscore, it is easy for the "separate" operation in tidyr package. Easy to separate data.
 
 ## Summarize the data
-Use the powerful dplyr's group_by and summarize to calculate the mean value for each subject and each activity.
+Use the powerful dplyr's "group_by" and "summarize" to calculate the mean value for each variable for each subject and each activity.
